@@ -48,3 +48,22 @@ Ensure you have a Python environment equipped with standard geospatial data scie
 ```bash
 pip install numpy pandas scipy geopandas rasterio
 
+Execute the scripts in order:
+Bash
+
+# Step 1: Run Monte Carlo flood hazard simulation
+python 01_flood_monte_carlo_dhaka_v2.py
+
+# Step 2: Compute building-level structural damage and EAD
+python 02_add_structural_damage_v2.py
+
+# Step 3: Run spatial validation against historical flood maps
+python 03_historical_validation_template.py
+
+## 📄 Citation & License
+
+If you use or adapt this codebase in your research, please reference the associated accepted manuscript (information will be updated once the paper is fully published).
+
+> **[Insert Author Names]**, *"Probabilistic Urban Flood Risk and Building-Level Structural Vulnerability Assessment"*, Accepted for Publication / In Press.
+
+Distributed under the **MIT License**.
