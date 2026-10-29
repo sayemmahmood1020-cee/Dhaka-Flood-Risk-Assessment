@@ -16,9 +16,9 @@ except NameError:
     IN_COLAB = False
 
 if IN_COLAB:
-    BASE_DIR = '/content/drive/MyDrive/FLOOD_STRUCT/Flood/flood_results_q1_v2'
+    BASE_DIR = 'base direction'
 else:
-    BASE_DIR = r'E:\Download\Academic\3-1\Article\FLOOD_STRUCT\Flood\flood_results_q1_v2'
+    BASE_DIR = r'base direction'
 
 SCENARIOS = ['frequent', 'moderate', 'extreme']
 ANNUAL_EXCEEDANCE_PROB = {'frequent': 0.20, 'moderate': 0.05, 'extreme': 0.01}
