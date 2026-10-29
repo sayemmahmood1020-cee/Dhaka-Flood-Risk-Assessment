@@ -1,17 +1,3 @@
-"""
-03_historical_validation_dhaka.py
-================================================================
-HISTORICAL FLOOD VALIDATION ENGINE (ESA EO4SD) - BUG-FIXED & WATER-MASKED
-================================================================
-Fixes:
-  1. Permanent Water Isolation: Excludes 'Water body' features from 
-     valid evaluation domain to avoid counting river channels as False Positives.
-  2. POI Raster Integrity: Explicit path resolution and scale detection 
-     (0-1 vs 0-100%) to prevent coverage inversion bugs.
-  3. Strict Array Logic: Evaluates spatial contingency metrics without 
-     scalar bitwise errors.
-"""
-
 import os
 import gc
 import json
