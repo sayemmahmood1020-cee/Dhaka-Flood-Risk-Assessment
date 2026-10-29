@@ -1,17 +1,3 @@
-"""
-02_add_structural_damage_v3.py
-================================================================
-REVISED PRODUCTION STRUCTURAL DAMAGE PIPELINE
-================================================================
-Fixes applied:
-1. Correctly reprojects EPSG:4326 WGS84 geometries to EPSG:32646 (UTM 46N)
-   to extract true, individual building footprint areas in m2.
-2. Replaces flat fallback area assignment with typology-specific median 
-   imputation for any corrupted/zero-area geometries.
-3. Clamps unphysical Monte Carlo depth outliers (DEM sinks/pits) at 5.0m, 
-   matching urban flood bounds and depth-damage saturation thresholds.
-"""
-
 import os
 import json
 import numpy as np
