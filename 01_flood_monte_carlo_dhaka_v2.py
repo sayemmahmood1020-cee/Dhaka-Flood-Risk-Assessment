@@ -21,14 +21,14 @@ except NameError:
 if IN_COLAB:
     from google.colab import drive
     drive.mount('/content/drive')
-    base_path = '/content/drive/MyDrive/FLOOD_STRUCT/Flood'
+    base_path = 'file path for used google colab folder'
 else:
-    base_path = r'E:\Download\Academic\3-1\Article\FLOOD_STRUCT\Flood'
+    base_path = r'base file path'
 
-dem_path = os.path.join(base_path, 'Dhaka_elev_Merit.tif')
-study_area_path = os.path.join(base_path, 'dhaka.shp')
-buildings_path = os.path.join(base_path, 'dhaka_buildings.shp')
-output_folder = os.path.join(base_path, 'flood_results_q1_v2')
+dem_path = os.path.join(base_path, 'dem file')
+study_area_path = os.path.join(base_path, 'shape file')
+buildings_path = os.path.join(base_path, 'buildings shape file')
+output_folder = os.path.join(base_path, 'output file')
 checkpoint_folder = os.path.join(output_folder, 'checkpoints')
 os.makedirs(output_folder, exist_ok=True)
 os.makedirs(checkpoint_folder, exist_ok=True)
