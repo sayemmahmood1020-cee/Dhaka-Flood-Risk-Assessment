@@ -7,14 +7,12 @@ import geopandas as gpd
 from rasterio.features import rasterize
 
 # ----------------- PATH CONFIGURATION -----------------
-PROJECT_DIR = r'E:\Download\Academic\3-1\Article\FLOOD_STRUCT\Flood'
-HISTORIC_DIR = r'E:\Download\Academic\3-1\Article\Historic'
-OUTPUT_FOLDER = os.path.join(PROJECT_DIR, 'flood_results_q1_v2')
+PROJECT_DIR = r'project direction'
+HISTORIC_DIR = r'historic file location'
+OUTPUT_FOLDER = os.path.join(PROJECT_DIR, 'output path')
 
 HISTORICAL_EVENTS = {
-    '2007': {'scenario': 'moderate', 'description': 'ESA EO4SD 2007 Dhaka Severe Flood'},
-    '2014': {'scenario': 'frequent', 'description': 'ESA EO4SD 2014 Dhaka Moderate Flood'},
-    '2016': {'scenario': 'frequent', 'description': 'ESA EO4SD 2016 Dhaka Moderate Flood'}
+    Event descriptions based on historic events
 }
 
 # ----------------- UTILITY & LOADERS -----------------
