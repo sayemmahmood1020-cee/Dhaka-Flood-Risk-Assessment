@@ -1,5 +1,5 @@
 
-# Probabilistic Urban Flood Risk & Structural Damage Assessment Framework
+# Probabilistic Building-Scale Assessment of Structural Flood Risk and Expected Annual Damage in Dhaka, Bangladesh
 
 This repository provides a modular, city-agnostic Python codebase for probabilistic flood hazard modeling, building-level structural damage estimation, and spatial historical validation. 
 
