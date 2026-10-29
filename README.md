@@ -64,6 +64,6 @@ python 03_historical_validation_template.py
 
 If you use or adapt this codebase in your research, please reference the associated accepted manuscript (information will be updated once the paper is fully published).
 
-> **[Insert Author Names]**, *"Probabilistic Urban Flood Risk and Building-Level Structural Vulnerability Assessment"*, Accepted for Publication / In Press.
+> **Sayem Mahmood Sagar**, *"Probabilistic Urban Flood Risk and Building-Level Structural Vulnerability Assessment"*, Accepted for Publication / In Press.
 
 Distributed under the **MIT License**.
