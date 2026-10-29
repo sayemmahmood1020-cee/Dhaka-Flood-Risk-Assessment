@@ -12,7 +12,7 @@ HISTORIC_DIR = r'historic file location'
 OUTPUT_FOLDER = os.path.join(PROJECT_DIR, 'output path')
 
 HISTORICAL_EVENTS = {
-    Event descriptions based on historic events
+    event_descriptions_based_on_historic_events
 }
 
 # ----------------- UTILITY & LOADERS -----------------
