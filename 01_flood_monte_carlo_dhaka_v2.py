@@ -1,21 +1,3 @@
-"""
-01_flood_monte_carlo_dhaka_v2.py
-================================================================
-REVISION NOTES (mapped to NHAZ-D-26-00225 reviewer comments)
-================================================================
-Fixes applied:
-  1. HYDRAULIC WATER SURFACE ELEVATION (WSE) FIX: Replaced terrain-following
-     gaussian_filter blanket with absolute WSE derived from base river/channel
-     stage + sampled flood rise. Prevents high ground from flooding.
-  2. SOURCE-LEVEL HAZARD BOUNDING: Physical ceiling of 5.0m applied directly 
-     during simulation loop.
-  3. FOOTPRINT AREA PARSING: Prefers pre-computed Google Open Buildings area 
-     ('area_in_me') to prevent degree-based projection errors.
-  4. VECTORIZED ZONAL STATS: Uses rasterize + scipy.ndimage.mean for fast, 
-     consistent building-level depth extraction.
-  5. FULL UNCERTAINTY PROPAGATION: Saves building_depth_samples.npy across runs.
-"""
-
 import os
 import gc
 import json
